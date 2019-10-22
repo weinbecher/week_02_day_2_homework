@@ -34,6 +34,7 @@ class TestBears < MiniTest::Test
     @bear1.bear_take_fish(@fish1)
     assert_equal(1,@bear1.check_stomach)
   end
+
 end
 
 

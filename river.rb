@@ -14,6 +14,8 @@ class River
     @fish.push(fish)
   end
 
-
+  def lose_fish(fish)
+    @fish.delete(fish)
+  end
 
 end

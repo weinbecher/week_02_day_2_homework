@@ -39,7 +39,9 @@ class TestRiver < MiniTest::Test
       @river1.add_fish(@fish1)
       @river1.add_fish(@fish2)
       @bear1.bear_take_fish(@fish1)
+      @river1.lose_fish(@fish1)
       assert_equal(1,@river1.check_fish)
+      assert_equal(1,@bear1.check_stomach)
     end
 
 
